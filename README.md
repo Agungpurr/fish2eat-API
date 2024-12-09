@@ -4,13 +4,20 @@ Powered by:
 
 ![gcp](https://github.com/user-attachments/assets/ba3f60e8-6002-4ea7-a2be-465835db69f9)
 
+Prerequisites
+Before you begin, make sure you have the following software installed on your system:
+
+Node.js (version 18 or above)
+
+NPM (Node Package Manager)
+
 ---
 
 ## Overview
 
 ### Title: Fish2Eat Test API
 **Description:**  
-API ini mendukung pengelolaan data ikan, prediksi berbasis gambar menggunakan model machine learning, dan penyediaan resep ikan.  
+This API supports fish data management, image-based predictions using machine learning models, and fish recipe provision.
 **Version:** 1.0.0  
 **Base URL:**  
 - **REST API**: `https://fish2eat-api2-512565326395.asia-southeast2.run.app`  
