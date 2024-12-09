@@ -177,7 +177,7 @@ Menghapus resep dari database.
 
 ---
 
-### 2. **Ml API Endpoints**
+### 3. **Ml API Endpoints**
 #### POST `/predict-fish-info/`
 **Description:**
 Menganalisis gambar ikan untuk memprediksi kelas, detail ilmiah, dan resep terkait.
