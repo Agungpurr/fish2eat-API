@@ -54,11 +54,11 @@ Mengambil semua data ikan dan detailnya (metode memasak, bahan, instruksi, dan g
 ]
 ```
 
-POST /api/fish
-Description:
+#### POST /api/fish
+**Description:**  
 Menambahkan data ikan baru ke database.
 
-Request Body:
+**Request Body:**
 ```json
 {
   "id": "fishID3",
@@ -69,14 +69,14 @@ Request Body:
   "imageURL": "https://example.com/fish.jpg"
 }
 ```
-response :
+**response :**
 ```json
 {
   "message": "Fish added successfully!"
 }
 ```
 
-GET /api/fish/{id}
+#### GET /api/fish/{id}
 Description:
 Mengambil detail ikan berdasarkan ID.
 
