@@ -4,12 +4,11 @@ Powered by:
 
 ![gcp](https://github.com/user-attachments/assets/ba3f60e8-6002-4ea7-a2be-465835db69f9)
 
-Prerequisites
-Before you begin, make sure you have the following software installed on your system:
+Prerequisites Before you begin, make sure you have the following software installed on your system:
 
-Node.js (version 18 or above)
+- **Node.js (version 18 or above)**
 
-NPM (Node Package Manager)
+- **NPM (Node Package Manager)**
 
 ---
 
@@ -17,7 +16,7 @@ NPM (Node Package Manager)
 
 ### Title: Fish2Eat Test API
 **Description:**  
-This API supports fish data management, image-based predictions using machine learning models, and fish recipe provision.
+This API supports fish data management, image-based predictions using machine learning models, and fish recipe provision.  
 **Version:** 1.0.0  
 **Base URL:**  
 - **REST API**: `https://fish2eat-api2-512565326395.asia-southeast2.run.app`  
@@ -54,8 +53,8 @@ Mengambil semua data ikan dan detailnya (metode memasak, bahan, instruksi, dan g
 ]
 ```
 
-#### POST /api/fish
-**Description:**  
+#### POST `/api/fish`
+**Description:**
 Menambahkan data ikan baru ke database.
 
 **Request Body:**
@@ -76,11 +75,11 @@ Menambahkan data ikan baru ke database.
 }
 ```
 
-#### GET /api/fish/{id}
-Description:
+#### GET `/api/fish/{id}`
+**Description:**
 Mengambil detail ikan berdasarkan ID.
 
-Response (Contoh untuk fishID1):
+**Response (Contoh untuk fishID1):**
 ```json
 {
   "id": "fishID1",
@@ -91,11 +90,11 @@ Response (Contoh untuk fishID1):
   "imageURL": "https://example.com/clownfish.jpg"
 }
 ```
-PUT /api/fish/{id}
-Description:
+#### PUT `/api/fish/{id}`
+**Description:**
 Memperbarui detail ikan berdasarkan ID.
 
-Request Body:
+**Request Body:**
 ```json
 {
   "name": "Mujair",
@@ -112,11 +111,11 @@ Response:
 }
 ```
 
-DELETE /api/fish/{id}
-Description:
+#### DELETE `/api/fish/{id}`
+**Description:**
 Menghapus data ikan dari database.
 
-Response:
+**Response:**
 ```json
 {
   "message": "Fish deleted successfully!"
@@ -125,11 +124,11 @@ Response:
 ---
 ### 2. **Recipe Endpoints**
 
-GET /api/recipes
-Description:
+#### GET `/api/recipes`
+**Description:**
 Mengambil semua resep masakan ikan.
 
-Response:
+**Response:**
 ```json
 [
   {
@@ -142,11 +141,11 @@ Response:
   }
 ]
 ```
-POST /api/recipes
-Description:
+#### POST `/api/recipes`
+**Description:**
 Menambahkan resep baru.
 
-Request Body:
+**Request Body:**
 ```json
 {
   "cookMethode": "Roast",
@@ -157,39 +156,39 @@ Request Body:
 }
 ```
 
-Response:
+**Response:**
 ```json
 {
   "message": "Recipe added successfully!"
 }
 ```
 
-GET /api/recipes/{id}
+- #### GET `/api/recipes/{id}`
 Description:
 Mengambil detail resep berdasarkan ID.
 
-PUT /api/recipes/{id}
+- #### PUT `/api/recipes/{id}`
 Description:
 Memperbarui detail resep berdasarkan ID.
 
-DELETE /api/recipes/{id}
+- #### DELETE `/api/recipes/{id}`
 Description:
 Menghapus resep dari database.
 
 ---
 
 ### 2. **Ml API Endpoints**
-POST /predict-fish-info/
-Description:
+#### POST `/predict-fish-info/`
+**Description:**
 Menganalisis gambar ikan untuk memprediksi kelas, detail ilmiah, dan resep terkait.
 
-Request Body:
+**Request Body:**
 ```json
 {
   "file": "string"
 }
 ```
-Response:
+**Response:**
 ```json
 {
   "prediction": {
@@ -216,11 +215,11 @@ Response:
   ]
 }
 ```
-GET /fish-info/{name}
-Description:
+#### GET `/fish-info/{name}`
+**Description:**
 Mengambil detail ikan dan resep berdasarkan nama ikan.
 
-Response:
+**Response:**
 ```json
 {
   "fish": {
